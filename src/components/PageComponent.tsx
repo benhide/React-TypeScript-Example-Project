@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import { Paper, styled, Typography } from "@material-ui/core";
+import { Paper, styled, Typography } from '@material-ui/core';
 
-import { CardList } from "components/CardList";
+import { CardList } from 'components/CardList';
 
-import { User } from "interfaces";
+import { User } from 'interfaces';
 
 const StyledPaper = styled(Paper)(() => ({
-  textAlign: "center",
-  padding: 10
+  textAlign: 'center',
+  padding: 10,
 }));
 
 export const PageComponent = (): JSX.Element => {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
       // If we type our interface correctly we can use them
       // to type the api response correctly as well ':User[]'

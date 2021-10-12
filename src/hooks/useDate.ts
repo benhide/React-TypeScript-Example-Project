@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-const LOCALE = "en" as const;
+const LOCALE = 'en' as const;
 
-const LOCALE_DAY_CONFIG = { weekday: "long" } as const;
+const LOCALE_DAY_CONFIG = { weekday: 'long' } as const;
 
-const LOCALE_MONTH_CONFIG = { month: "long" } as const;
+const LOCALE_MONTH_CONFIG = { month: 'long' } as const;
 
 // Readonly objects, can't be modified
 const LOCALE_TIME_CONFIG = {
-  hour: "numeric",
+  hour: 'numeric',
   hour12: true,
-  minute: "numeric",
-  second: "numeric"
+  minute: 'numeric',
+  second: 'numeric',
 } as const;
 
 export interface DateTime {

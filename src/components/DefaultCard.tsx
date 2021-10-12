@@ -1,23 +1,23 @@
-import React from "react";
+import React from 'react';
 
-import { Card, CardActions, CardContent, styled } from "@material-ui/core";
+import { Card, CardActions, CardContent, styled } from '@material-ui/core';
 
-import { User } from "interfaces";
+import { User } from 'interfaces';
 
 const StyledCard = styled(Card)(() => ({
   margin: 10,
   width: 300,
-  display: "inline-block",
-  transition: "transform .5s",
-  cursor: "pointer",
-  "&:hover": {
-    transform: "scale(1.05)"
-  }
+  display: 'inline-block',
+  transition: 'transform .5s',
+  cursor: 'pointer',
+  '&:hover': {
+    transform: 'scale(1.05)',
+  },
 }));
 
-// We can also type our function props with a function signature
 interface DefaultCardProps {
   user: User;
+  // We can also type our function props with a function signature
   onUserClicked: (user: User) => void;
 }
 

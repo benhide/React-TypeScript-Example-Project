@@ -7,9 +7,13 @@
         "noImplicitAny": true,
         "strictNullChecks": true,
         "allowUnreachableCode": false,
-        "esModuleInterop": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "outDir": "./dist",
         "lib": [
             "dom",
             "es2015"

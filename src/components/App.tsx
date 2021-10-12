@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from '@material-ui/core';
 
-import { PageComponent } from "components/PageComponent";
+import { PageComponent } from 'components/PageComponent';
 
-import { theme } from "styles/theme";
+import { theme } from 'styles/theme';
 
 export const App = (): JSX.Element => {
   return (

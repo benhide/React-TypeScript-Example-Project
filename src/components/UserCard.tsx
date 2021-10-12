@@ -1,21 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  Typography,
-  styled
-} from "@material-ui/core";
+import { Card, CardContent, CardHeader, Typography, styled } from '@material-ui/core';
 
-import { User } from "interfaces";
+import { User } from 'interfaces';
 
-import { useDate } from "hooks/useDate";
+import { useDate } from 'hooks/useDate';
 
 const StyledUserCard = styled(Card)(({ theme }) => ({
   margin: 20,
   padding: 10,
-  backgroundColor: theme.palette.background.default
+  backgroundColor: theme.palette.background.default,
 }));
 
 interface UserCardProps {
@@ -25,7 +19,7 @@ interface UserCardProps {
 export const UserCard = (props: UserCardProps): JSX.Element => {
   const { user } = props;
 
-  // Because our hook is correctly typed, retun typed,
+  // Because our hook is correctly typed, return typed,
   // we know what it is here as well, e.g. 'time' is a string
   // (hover over 'time' below)
   const { formattedDate, time } = useDate();

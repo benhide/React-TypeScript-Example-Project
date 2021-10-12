@@ -1,8 +1,8 @@
 {
-  "name": "react-typescript",
+  "name": "react-typescript-example",
   "version": "1.0.0",
-  "description": "React and TypeScript example project",
-  "keywords": ["typescript", "react"],
+  "description": "",
+  "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
     "@material-ui/core": "4.12.3",

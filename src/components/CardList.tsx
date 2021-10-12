@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import { Paper, styled } from "@material-ui/core";
+import { Paper, styled } from '@material-ui/core';
 
-import { UserCard } from "components/UserCard";
-import { DefaultCard } from "components/DefaultCard";
+import { UserCard } from 'components/UserCard';
+import { DefaultCard } from 'components/DefaultCard';
 
-import { User } from "interfaces";
+import { User } from 'interfaces';
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   margin: 20,
   padding: 10,
-  backgroundColor: theme.palette.background.default
+  backgroundColor: theme.palette.background.default,
 }));
 
 // Rather than PropTypes we can use interfaces
