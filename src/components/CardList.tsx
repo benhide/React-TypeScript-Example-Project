@@ -30,7 +30,7 @@ export const CardList = (props: CardListProps): JSX.Element => {
 
   // Typing helps us see errors earlier
   const onClicked = (user: number): boolean => {
-    setSelectedUser(user);
+    return setSelectedUser(user);
   };
 
   return (
